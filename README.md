@@ -155,9 +155,10 @@ an edge table only when hop depth or corpus size demands it.
 - No incremental indexing (tracked in the issues). Packaging exists since v0.3.0 (`pip install sqlite-graph-memory`). There IS an eval suite now — see
   [Measure before you swap](#measure-before-you-swap--eval) — but it scores retrieval on
   wikilink-derived gold, which is weak supervision and says so out loud. Test coverage is uneven:
-  `index_notes.py`, `brain_ask.py` and `mcp_server.py` have unit tests, `turnstate_hook.py`
-  has none. Run `pytest -q` for the current count rather than trusting a number written in
-  prose here — that is how this file ended up claiming "no tests" while seven were passing.
+  `index_notes.py`, `brain_ask.py` and `mcp_server.py` have unit tests, and
+  `turnstate_hook.py` has write-path coverage. Run `pytest -q` for the current count rather
+  than trusting a number written in prose here — that is how this file ended up claiming
+  "no tests" while seven were passing.
   The status line above says **pilot** on purpose.
 
 ## Quickstart
